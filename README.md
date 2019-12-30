@@ -20,7 +20,7 @@ you, and may be able to use fast computers to try millions of combinations of
 words per second.
 
 Optimal security requires a completely random choice of words, but that
-completely defeats the purpose of this software: you'd be better of generating
+completely defeats the purpose of this software: you'd be better off generating
 your wallet with other software.
 Wallets generated with this software should be considered less secure than
 other BIP39-based wallets.
@@ -31,14 +31,17 @@ the useability side.
 It is recommended to only use it for low-value wallets, where it makes little
 sense for attackers to put much effort in trying to guess the mnemomic code.
 
+**TL;DR: from a security perspective, it is a bad idea to use this software,**
+especially if you don't fully understand the trade-off you're making.
+
 ## Requirements
 Python 3
 
 ## Usage
-* Choose the first 11 words from the word list in `english.txt`
+* Choose the first 11 words from the word list in `english.txt`.
+  This is like a passphrase: it should be near impossible for others to guess
+  your choice of words.
 * Run vanity.py
 * Enter the first 11 words, separated by spaces, and press Enter
 * vanity.py displays the options for the 12th word
-
-
 
